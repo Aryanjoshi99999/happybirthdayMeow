@@ -1,5 +1,5 @@
 import React from "react";
-import "./MessageSection.css";
+import "./Messagesection.css";
 
 import catImage from "../../assets/cat_3d.png";
 import sunflowerImage from "../../assets/sunflower_3d.png";
