@@ -1,0 +1,151 @@
+.message-container {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(180deg, #fff0f3 0%, #ffe3fa 100%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 100px 20px;
+
+  position: relative;
+  overflow-x: hidden;
+}
+
+.paper-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 600px;
+  padding: 60px 40px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  position: relative;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paper-card:hover {
+  transform: rotate(0deg) scale(1.02) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.pin-decoration {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.pin-icon {
+  width: 60px;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+  animation: pulse 3s infinite ease-in-out;
+}
+
+.message-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #880e4f;
+  margin-bottom: 30px;
+}
+
+.message-body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #5d4037;
+}
+
+.message-body p {
+  margin-bottom: 20px;
+}
+
+.message-footer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signature {
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5rem;
+  color: #d81b60;
+  margin-top: 10px;
+}
+
+.footer-decoration {
+  width: 80px;
+  margin-top: 20px;
+}
+
+/* New: Little page number/divider for cards without signatures */
+.page-number {
+  font-family: "Great Vibes", cursive;
+  color: #ff80ab;
+  font-size: 1.5rem;
+  opacity: 0.6;
+}
+
+.yb {
+  font-family: "Great Vibes", cursive;
+  color: #090003;
+  font-size: 1.5rem;
+  opacity: 1.5;
+}
+
+.heh {
+  font-family: "Poppins", sans-serif;
+  color: #090003;
+  font-size: 0.5rem;
+  opacity: 1.5;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .message-container {
+    padding: 60px 15px;
+    gap: 50px;
+  }
+
+  .side-lane {
+    display: none;
+  }
+
+  .paper-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 20px;
+
+    transform: rotate(0deg) !important;
+  }
+
+  .message-title {
+    font-size: 2rem;
+  }
+
+  .message-body {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .pin-icon {
+    width: 45px;
+    top: -20px;
+  }
+}
