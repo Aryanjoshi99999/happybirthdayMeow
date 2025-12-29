@@ -165,7 +165,6 @@ const MessageSection = () => {
 
   return (
     <div className="message-container">
-      {/* --- LEFT DECORATION LANE --- */}
       <div className="side-lane left-lane">
         {leftLane.map((item) => (
           <img
@@ -178,7 +177,6 @@ const MessageSection = () => {
         ))}
       </div>
 
-      {/* --- RIGHT DECORATION LANE --- */}
       <div className="side-lane right-lane">
         {rightLane.map((item) => (
           <img
@@ -195,10 +193,8 @@ const MessageSection = () => {
         <div
           key={card.id}
           className="paper-card"
-          // This applies the unique tilt to each card
           style={{ transform: `rotate(${card.rotation}deg)` }}
         >
-          {/* The Pin/Sticker Decoration */}
           <div className="pin-decoration">
             <img src={card.pin} alt="decoration" className="pin-icon" />
           </div>
@@ -211,7 +207,6 @@ const MessageSection = () => {
             ))}
           </div>
 
-          {/* Footer */}
           <div className="message-footer">
             {card.signature ? (
               <>

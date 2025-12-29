@@ -35,8 +35,6 @@ const Mainbirthdaywish = () => {
 
   const audioRef = useRef(new Audio(hbdSong));
 
-  // --- RANDOM MOTION LOGIC ---
-  // Positions are fixed, but speed (duration) and start time (delay) are random
   const floatingStyles = useMemo(() => {
     const random = (min, max) => Math.random() * (max - min) + min;
 

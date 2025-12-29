@@ -191,7 +191,6 @@ const rightLane = [
 const PhotoGallery = () => {
   return (
     <div className="gallery-container">
-      {/* --- LEFT DECORATION LANE --- */}
       <div className="side-lane left-lane">
         {leftLane.map((item) => (
           <img
@@ -199,13 +198,11 @@ const PhotoGallery = () => {
             src={item.src}
             alt="deco"
             className="lane-icon"
-            // FIX: Use item.style directly. This passes top, left, width AND animationDelay
             style={item.style}
           />
         ))}
       </div>
 
-      {/* --- RIGHT DECORATION LANE --- */}
       <div className="side-lane right-lane">
         {rightLane.map((item) => (
           <img
@@ -213,7 +210,6 @@ const PhotoGallery = () => {
             src={item.src}
             alt="deco"
             className="lane-icon"
-            // FIX: Use item.style directly
             style={item.style}
           />
         ))}
