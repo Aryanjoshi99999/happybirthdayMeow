@@ -1,5 +1,5 @@
 import React from "react";
-import "./PhotoGallery.css";
+import "./Photogallery.css";
 
 // emojis
 import balloonImage from "../../assets/balloon_3d.png";
